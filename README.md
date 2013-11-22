@@ -7,7 +7,8 @@ This project uses the [Heroku][heroku] [Vulcan][vulcan] build system to build a 
 The following build command has been successful on previous runs:
 
 ```bash
-vulcan build --source="." --output="libxml2.tar.gz" --command "./configure --prefix=/app/vendor && make && make install" --verbose
+vulcan build --source="." --output="libxml2.tar.gz" --verbose \
+  --command "./configure --prefix=/app/vendor && make && make install"
 ```
 
 [heroku]: http://www.heroku.com
